@@ -54,7 +54,7 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-        </div>
+        
       </nav>
     </div>
     <ul class="sidenav" id="mobile-nav">
@@ -82,7 +82,25 @@
     <div class="slider">
       <ul class="slides">
         <li>
-          <img src="" alt="" />
+          <img src="img/slider1.jpg" alt="" />
+          <div class="caption left-align">
+            <h3>Welcome to Your Gym</h3>
+            <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/slider2.jpg" alt="" />
+          <div class="caption left-align">
+            <h3>Welcome to Your Gym</h3>
+            <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/slider3.jpg" alt="" />
+          <div class="caption right-align">
+            <h3>Welcome to Your Gym</h3>
+            <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+          </div>
         </li>
       </ul>
     </div>
@@ -94,6 +112,17 @@
       document.addEventListener("DOMContentLoaded", function () {
         var sn = document.querySelectorAll(".sidenav");
         var instances = M.Sidenav.init(sn, { edge: "left" });
+      });
+
+      //Slider
+      document.addEventListener("DOMContentLoaded", function () {
+        var sl = document.querySelectorAll(".slider");
+        var instances = M.Slider.init(sl, {
+          height: 700,
+          indicators: false,
+          transition: 500,
+          interval: 6000,
+        });
       });
     </script>
   </body>
