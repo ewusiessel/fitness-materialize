@@ -42,6 +42,9 @@
         <div class="container">
           <div class="nav-wrapper">
             <a href="#" class="brand-logo">LOGO</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
             <ul class="right hide-on-med-and-down">
               <li><a href="#">Home</a></li>
               <li><a href="#">Blog</a></li>
@@ -54,7 +57,34 @@
         </div>
       </nav>
     </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#blog">Blog</a>
+      </li>
+      <li>
+        <a href="#products">Products</a>
+      </li>
+      <li>
+        <a href="#gallery">Gallery</a>
+      </li>
+      <li>
+        <a href="#trainers">Trainers</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      // Side nav
+      document.addEventListener("DOMContentLoaded", function () {
+        var sn = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(sn, { edge: "left" });
+      });
+    </script>
   </body>
 </html>
