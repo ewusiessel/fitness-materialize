@@ -11,5 +11,11 @@
 }
 
 .brand-logo {
-  margin-top: 5px;
+  margin: 5px;
+}
+
+.section-blog img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
