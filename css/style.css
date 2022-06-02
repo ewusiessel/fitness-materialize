@@ -14,6 +14,10 @@
   margin: 5px;
 }
 
+.card-panel {
+  border-radius: 10px;
+}
+
 .section-blog img {
   width: 100%;
   height: 100%;
@@ -26,4 +30,12 @@
 
 .parallax-container {
   height: 400px;
+}
+
+.section-blog h3 {
+  margin-top: 0px;
+}
+
+.footer-text {
+  font-size: 15px;
 }
