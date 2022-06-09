@@ -39,3 +39,16 @@
 .footer-text {
   font-size: 15px;
 }
+
+.btn-stats {
+  border: 1px solid #fff;
+  border-radius: 2px;
+  font-size: 14px;
+  color: white;
+  padding: 5px 15px;
+  margin-bottom: 40px;
+}
+
+.color-icons {
+  margin-top: 40px;
+}
